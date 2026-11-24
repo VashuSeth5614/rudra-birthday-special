@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUDRA | Birthday Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <!-- INTRO -->
+  <section class="screen active" id="intro">
+    <p class="small">A SPECIAL TRANSMISSION FOR</p>
+    <h1>RUDRA<br><span>MODANWAL</span></h1>
+    <p class="subtitle">TODAY IS NOT AN ORDINARY DAY.</p>
+    <button onclick="startExperience()">ENTER THE EXPERIENCE ↗</button>
+    <p class="hint">⚠️ Birthday mode activated</p>
+  </section>
+
+  <!-- GAME -->
+  <section class="screen" id="game">
+    <p class="small">CHAPTER 01 — THE TEST</p>
+    <h2>ARE YOU READY?</h2>
+    <p class="description">
+      Before unlocking your birthday surprise,
+      prove that you're the main character.
+    </p>
+
+    <div class="game-card">
+      <div class="game-icon">⚡</div>
+      <h3>THE LEGEND CHALLENGE</h3>
+      <p>Tap the button 5 times to unlock your surprise.</p>
+      <h2 id="counter">0 / 5</h2>
+      <div class="progress">
+        <div id="progressFill"></div>
+      </div>
+      <button id="tapButton" onclick="tapChallenge()">TAP ME ⚡</button>
+      <p id="gameMessage">Don't disappoint us, Rudra 😂</p>
+    </div>
+  </section>
+
+  <!-- ROAST -->
+  <section class="screen" id="roast">
+    <p class="small">CHAPTER 02 — CLASSIFIED FILE</p>
+    <h2>THE LEGEND HIMSELF.</h2>
+    <div class="roast-card">
+      <p class="big-emoji">🗿</p>
+      <h3>RUDRA MODANWAL</h3>
+      <p>Birthday boy.</p>
+      <div class="roast-line">100% DRAMA</div>
+      <div class="roast-line">200% ATTITUDE</div>
+      <div class="roast-line">0% SENSIBLE SOMETIMES 😂</div>
+      <p class="description">
+        Jokes apart, life is better with a friend like you.
+      </p>
+    </div>
+    <button onclick="showScreen('message')">CONTINUE →</button>
+  </section>
+
+  <!-- MESSAGE -->
+  <section class="screen" id="message">
+    <p class="small">CHAPTER 03 — A MESSAGE FROM YOUR FRIEND</p>
+    <div class="message-card">
+      <p class="small">LISTEN UP, RUDRA.</p>
+      <h2>ONE THING...</h2>
+      <p class="personal">
+        Duniyadari chhod bsdk,<br>
+        khud pe dhyaan diya kr 😘
+      </p>
+      <div class="line"></div>
+      <p class="description">
+        Seriously bro, take care of yourself.
+        Don't waste all your energy worrying about
+        everyone else. Focus on your dreams,
+        your happiness and your future.
+      </p>
+      <p class="signature">— From your friend ❤️</p>
+    </div>
+    <button onclick="showScreen('final')">ONE LAST THING... ✨</button>
+  </section>
+
+  <!-- FINALE -->
+  <section class="screen" id="final">
+    <div class="final-icon">🎂</div>
+    <p class="small">THE FINAL CHAPTER</p>
+    <h1>HAPPY<br><span>BIRTHDAY!</span></h1>
+    <h2 class="final-name">RUDRA MODANWAL</h2>
+    <p class="description">
+      May your next chapter be bigger,
+      brighter and full of unforgettable moments.
+    </p>
+    <h3 class="wish">STAY LEGENDARY. 🖤</h3>
+    <button onclick="celebrate()">CELEBRATE AGAIN 🎉</button>
+    <p class="footer">MADE WITH FRIENDSHIP & A LITTLE SARCASM.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
